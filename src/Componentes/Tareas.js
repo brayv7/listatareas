@@ -12,8 +12,7 @@ const Tareas = ({ tarea, toggle, editar, borrar }) => {
   const [nuevaTarea, cambiarNuevaTarea] = useState(tarea.texto);
 
   const handleSubmit = (e) => {
-    e.preventDeafult();
-    editar(tarea.id, nuevaTarea);
+     editar(tarea.id, nuevaTarea);
     cambiarEditandoTarea(false);
   };
 
